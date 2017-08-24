@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../../libs/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../libs/sb-admin-2/css/sb-admin-2.min.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="../../libs/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../../libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="../../styles/estilo.css">
+    <link href="../../libs/kendo/style/kendo.common.min.css" rel="stylesheet">
+    <link href="../../libs/kendo/style/kendo.rtl.min.css" rel="stylesheet">
+    <link href="../../libs/kendo/style/kendo.default.min.css" rel="stylesheet">
+    <link href="../../libs/kendo/style/kendo.default.mobile.min.css" rel="stylesheet">
+    <script src="../../libs/jquery.min.js"></script>
+    <script src="../../libs/jszip.min.js"></script>
+    <script src="../../libs/kendo/kendo.all.min.js"></script>
+    <script src="notas.js"></script>
+</head>
+
+<body>
+<div class="container-fluid">
+    <!--div.row-->
+    <div class="row">
+        <div class="col-lg-2">
+            <!-- Navigation -->
+            <ul class="nav" id="side-menu">
+                <!-- Dashboard -->
+                <li>
+                    <a href="#"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                </li>
+                <!-- /Dashboard -->
+
+                <!-- Menu Doble -->
+                <li>
+                    <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="flot.html">Flot Charts</a>
+                        </li>
+                        <li>
+                            <a href="morris.html">Morris.js Charts</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- /Menu Doble -->
+
+                <!-- Menu simple -->
+                <li>
+                    <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
+                </li>
+                <!-- /Menu simple -->
+            </ul>
+            <!-- /.sidebar-collapse -->
+        </div>
+
+        <div class="col-lg-10">
+            <div class="centerDiv">
+                <form method="post" action="../../scripts/php/notas.php">
+                    <div class="form-space"></div>
+                    <div class="titulo-formulario"> Notas</div>
+                    <div class="form-row">
+                        <div class="left-panel">
+                            Notas:
+                        </div>
+                        <div class="right-panel">
+                            <input type="text" class="textBox" id="Notas" name="Notas" placeholder="Nuevo"
+                                   style="width: 80%;">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="left-panel">
+                            IdParcial:
+                        </div>
+                        <div class="right-panel">
+                            <input type="text" class="textBox" name="IdParcial" placeholder="IdParcial">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="left-panel">
+                            IdMatriculaAsignatura:
+                        </div>
+                        <div class="right-panel">
+                            <input type="text" class="textBox" name="IdMatriculaAsignatura"
+                                   placeholder="IdMatriculaAsignatura">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <input type="submit" class="boton" name="submit" id="guardar" value="GUARDAR">
+                        <input type="submit" class="boton" name="submit" id="borrar" value="BORRAR">
+                    </div>
+                    <div class="form-space"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--/div.row-->
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="../../libs/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../../libs/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Metis Menu Plugin JavaScript -->
+<script src="../../libs/metisMenu/metisMenu.min.js"></script>
+
+<!-- Morris Charts JavaScript -->
+<script src="../../libs/raphael/raphael.min.js"></script>
+<script src="../../libs/morrisjs/morris.min.js"></script>
+<script src="../../libs/morrisjs/morris-data.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="../../libs/sb-admin-2/js/sb-admin-2.min.js"></script>
+
+</body>
+
+</html>

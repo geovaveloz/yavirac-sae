@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Desarrollo de Software Yavirac">
+    <title>Login</title>
+    <link href="libs/metro/docs/css/metro.css" rel="stylesheet">
+    <link href="libs/metro/docs/css/metro-icons.css" rel="stylesheet">
+    <link href="libs/metro/docs/css/metro-responsive.css" rel="stylesheet">
+    <link href="libs/metro/docs/css/metro-schemes.css" rel="stylesheet">
+    <script src="libs/jquery.js"></script>
+    <script src="libs/metro/docs/js/metro.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/estilo.css">
+    <script src="scripts/js/login.js"></script>
+</head>
+<body class="BodyFondo">
+<div class="centerDiv" class="form">
+    <form>
+        <img class="formTopLogo" src="images/logoYavirac.png">
+        <div class="titulo-formulario">Le damos la bienvenida</div>
+        <div class="form-row">
+            <div class="cell">
+                <div class="input-control modern text iconic" data-role="input">
+                    <input type="text" name="nickname" id="nickname">
+                    <span class="label">Usuario</span>
+                    <span class="informer">Ingrese su usuario</span>
+                    <span class="placeholder">Ingrese su usuario</span>
+                    <span class="icon mif-user"></span>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="cell">
+                <div class="input-control modern password iconic " data-role="input">
+                    <input type="password" name="password" id="password">
+                    <span class="label">Contraseña</span>
+                    <span class="informer">Ingrese su contraseña</span>
+                    <span class="placeholder">Ingrese su contraseña</span>
+                    <span class="icon mif-lock"></span>
+                    <button class="button helper-button reveal"><span class="mif-looks"></span></button>
+                </div>
+            </div>
+        </div>
+        <div class="form-row"></br></br></div>
+        <div class="form-row">
+            <button type="button" class="botonVerde" onclick="autenticar();">Aceptar</button>
+            <button type="button" class="botonAzul" onclick="location.href = 'pages/crearcuenta/crearcuenta.html';">Crear Cuenta</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

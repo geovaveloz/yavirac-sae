@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Desarrollo de Software Yavirac">
+    <link rel="stylesheet" type="text/css" href="../../styles/estilo.css">
+    <script src="../../libs/jquery.js"></script>
+    <title>Registro Usuarios</title>
+    <script>  
+        function controlDatos() {
+           var passwordConfirm = document.getElementById("passwordConfirm").value;
+           var password = document.getElementById("password").value;
+           var nickname = document.getElementById("nickname").value;
+           var cedula = document.getElementById("cedula").value;
+           var correo = document.getElementById("correo").value;
+           var telefono = document.getElementById("telefono").value;
+           var apellidos = document.getElementById("apellidos").value;
+           var nombres = document.getElementById("nombres").value;
+           if ((passwordConfirm === password) && !(password === "")){
+              document.getElementById("passwordconfirmdiv").style.display = "block";
+           }else{
+              document.getElementById("passwordconfirmdiv").style.display = "none";
+           }
+           if((passwordConfirm === password) && !(nickname==="") && !(cedula==="") && !(correo==="") && !(telefono==="") && !(apellidos==="") && !(nombres==="")){
+               $( "#aceptar" ).prop( "disabled", false );
+           }else{
+               $( "#aceptar" ).prop( "disabled", true );
+           }
+        };
+        $(document).ready(function () {
+            document.getElementById("passwordconfirmdiv").style.display = "none";
+            $( "#aceptar" ).prop( "disabled", true );
+        });
+    </script>
+</head>
+<body class="BodyFondo">
+    <div class="centerDiv">    
+        <form method="post" action="../../scripts/php/autenticador/registrarPersona.php">
+            <img class="formTopLogo" src="../../images/logoYavirac.png">
+            <div class="titulo-formulario">Registro de Usuario</div>
+            <div class="form-row">
+                <div class="left-panel">
+                    Nombres:
+                </div>
+                <div class="right-panel">
+                    <input type="text" class="textBox" id="nombres" name="nombres" placeholder="Nombres" onkeyup="controlDatos();">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="left-panel">
+                    Apellidos:
+                </div>
+                <div class="right-panel">
+                    <input type="text" class="textBox" id="apellidos" name="apellidos" placeholder="Apellidos" onkeyup="controlDatos();">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="left-panel">
+                    Tel&eacute;fono:
+                </div>
+                <div class="right-panel">
+                    <input type="number" class="textBox" id="telefono" name="telefono" placeholder="Tel&eacute;fono" onkeyup="controlDatos();">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="left-panel">
+                    Correo:
+                </div>
+                <div class="right-panel">
+                    <input type="email" class="textBox" id="correo" name="correo" placeholder="Correo Electr&oacute;nico" onkeyup="controlDatos();">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="left-panel">
+                    Cedula:
+                </div>
+                <div class="right-panel">
+                    <input type="number" class="textBox" id="cedula" name="cedula" placeholder="Cedula" onkeyup="controlDatos();" >
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="left-panel">
+                    Nombre de Cuenta:
+                </div>
+                <div class="right-panel">
+                    <input type="text" class="textBox" id="nickname" name="nickname" placeholder="Nombre de Cuenta" onkeyup="controlDatos();">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="left-panel">
+                    Clave:
+                </div>
+                <div class="right-panel">
+                    <input type="password" class="textBox" id="password" name="password" placeholder="Clave de la Cuenta" onkeyup="controlDatos();">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="left-panel">
+                    Confirmar Clave:
+                </div>
+                <div class="right-panel">
+                    <input type="password" class="textBox" id="passwordConfirm" name="passwordConfirm" placeholder="Confirmar la Clave de la Cuenta" onkeyup="controlDatos();">
+                </div>
+            </div>
+            <div id="passwordconfirmdiv" class="form-row">
+                <div  class="ok-text">
+                    Clave Confirmada Satisfactoriamente </br></br>
+                </div>
+            </div>
+            <div class="form-row">
+                <input type="submit" class="botonVerde" id="aceptar" name="submit" value="ACEPTAR">
+                <button type="button" class="botonRojo" onclick="location.href = '/sae/index.html';">CANCELAR</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,267 @@
+html{
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+body{
+    margin: 0 auto;
+    background-color: white;
+}
+
+.BodyFondo{
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+header{
+    float: left;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 55px;
+    background-color: white;
+    text-align: center;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.instituto{
+    float: left;
+    font-size: 28px;
+    color:black;
+    line-height: 55px;
+    white-space: nowrap;
+}
+
+.institutoLogo{
+    float: left;
+    padding-left: 10px;
+    height: 70px;
+    padding-top:5px;
+    padding-right: 10px;
+}
+
+.titulo{
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+    padding-right:5px;
+    padding-top:20px;
+}
+
+.titulo-formulario{
+    float: left;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FF5400;
+}
+
+.usuario{
+    float: right;
+    font-size: 14px;
+    color:black;
+    line-height: 55px;
+    white-space: nowrap;
+    padding-right: 10px;
+}
+
+.usuarioFoto{
+    float: left;
+    height: 35px;
+    width: 35px;
+    margin: 10px;
+    border-radius: 50%;
+    background-position: 50%;
+    cursor: pointer;
+}
+
+.cerrarSesion{
+    float: right;
+    height: 35px;
+    width: 35px;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+nav{
+    float: left;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white; 
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: silver;
+    color:black;
+}
+
+.active {
+    color: #FF5400;
+    font-weight: bold;
+    border-width: 2px;
+    border-color: #FF5400;
+    border-style: none none solid none;
+}
+
+.centerDiv{
+    width: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+form{
+    float: left;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.74);
+    padding: 5px;
+    box-shadow: 0px 0px 5px #737070;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.formTopLogo{
+    width: 160px;
+    margin-bottom: 15px;
+}
+
+.form-space{
+    float: left;
+    height: 5px;
+    width: 100%;
+}
+
+.form-row{
+    float: left;
+    width: 100%;
+}
+
+.left-panel{
+    float:left;
+    text-align: right;
+    height: 50px;
+    line-height: 40px;
+    width: 30%;
+    font-weight: bold;
+    color: black;
+}
+
+.right-panel{
+    float:right;
+    text-align: left;
+    height: 50px;
+    width: 69%;
+}
+
+.textBox{
+    width: 80%;
+    font-size: 15px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #c9cdd3;
+    border-radius: 5px;
+    text-indent: 10px;
+}
+
+.boton{
+    background-color: #F48248;
+    border: 1px solid #FF5400;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.botonAzul{
+    background-color: #337AB7;
+    border: 1px solid #2E6DA4;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.botonRojo{
+    background-color: #d9534f;
+    border: 1px solid #AB413D;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 10px 25px;
+    margin-left: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.botonAzul:hover{
+    background-color: #2E6DA4;
+}
+
+.botonVerde{
+    background-color: #5cb85c;
+    border: 1px solid #4cae4c;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 10px 25px;
+    margin-left: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.botonVerde:hover{
+    background-color: #4cae4c;
+}
+
+.botonRojo:hover{
+    background-color: #AB413D;
+}
+
+.boton:hover{
+    background-color: #F48248;
+}
+
+.ok-text{
+    color:black;
+    font-weight: bold;
+    font-size: 14px;
+}
