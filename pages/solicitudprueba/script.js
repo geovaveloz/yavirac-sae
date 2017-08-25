@@ -1,9 +1,9 @@
 $(document).ready(function () {
-   /* swal(
+    swal(
         'Bienvenido',
-        'El proceso de matrícula consta de 4 pasos, el sistema le va a guiar.',
+        'Se recomienda la actualización de los datos en su perfil',
         'info'
-    );*/
+    );
     var carreras = $("#carreras").kendoDropDownList({
         dataTextField: "nombre",
         dataValueField: "id",
@@ -20,9 +20,12 @@ $(document).ready(function () {
             }
         }
     });
+
+    document.getElementById("AsignaturasMatriculables").style.display = "none";
 });
 
 function  seleccionado() {    
+    document.getElementById("AsignaturasMatriculables").style.display = "block";
     var asignaturas = $("#grid").kendoGrid({
         dataSource: {
             pageSize: 10,
@@ -31,27 +34,29 @@ function  seleccionado() {
                     url: "../../scripts/php/get/getAsignaturasMatriculables.php?nivel=1&carrera="+$("#carreras").val(),
                     dataType: "json"
                 }
-            },
-            schema: {
-                model: {
-                    id: "id"
-                }
             }
         },
         pageable: true,
         scrollable: false,
         persistSelection: true,
-        sortable: true,
         change: onChange,
         columns: [
-            { selectable: true, width: "50px" },
+            { selectable: true , width: "50px"},
             { field:"codigo", title: "Código" },
             { field: "nombre", title:"Asignatura", format: "{0:c}"},
             { field: "nivel", title:"Periodo Académico"},
-            { field: "horasPractica", title:"Horas"}]
+            { field: "horas", title:"Horas"}]
     });
 }
 
 function onChange(arg) {
     kendoConsole.log("The selected product ids are: [" + this.selectedKeyNames().join(", ") + "]");
+}
+
+function visualizarSolicitud(){
+    alert("se supone que debe verse la solicitud");
+}
+
+function cancelarSolicitud(){
+    alert("se supone que debe cancelar la solicitud");
 }

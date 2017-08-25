@@ -48,6 +48,22 @@ footer{
     padding-right: 10px;
 }
 
+.fotoContainer{
+    float:left;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.fotoPersona{
+    padding-left: 10px;
+    height: 150px;
+    padding-top:5px;
+    padding-right: 10px;
+    border-radius: 50%;
+}
+
 .titulo{
     float: right;
     font-size: 16px;
@@ -133,19 +149,31 @@ li a:hover:not(.active) {
 }
 
 .centerDiv{
-    width: 600px;
+    width:600px;
+    height: 100px;
     text-align: center;
     margin: 0 auto;
 }
 
 form{
     float: left;
-    width: 500px;
+    width: 100%;
     text-align: center;
-    margin: 0 auto;
     margin-top: 30px;
+    margin-left:-20px;
     background-color: rgba(255, 255, 255, 0.74);
-    padding: 5px;
+    box-shadow: 0px 0px 5px #737070;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.bigform{
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    margin-left:-20px;
+    background-color: rgba(255, 255, 255, 0.74);
     box-shadow: 0px 0px 5px #737070;
     border-radius: 10px;
     padding: 20px;

@@ -1,1 +1,100 @@
-<!DOCTYPE html><html lang="es" xmlns="http://www.w3.org/1999/xhtml"><head>    <meta charset="utf-8" />    <meta name="author" content="Desarrollo de Software Yavirac">    <link rel="stylesheet" type="text/css" href="../../styles/estilo.css">    <link href="../../libs/kendo/style/kendo.common.min.css" rel="stylesheet">    <link href="../../libs/kendo/style/kendo.rtl.min.css" rel="stylesheet">    <link href="../../libs/kendo/style/kendo.default.min.css" rel="stylesheet">    <link href="../../libs/kendo/style/kendo.default.mobile.min.css" rel="stylesheet">    <script src="../../libs/jquery.min.js"></script>    <script src="../../libs/jszip.min.js"></script>    <script src="../../libs/kendo/kendo.all.min.js"></script>    <script src="persona.js"></script>    <meta name="author" content="Desarrollo de Software Yavirac">    <title>PERSONA</title></head><body class="BodyFondo">    <div class="centerDiv">        <form method="post" action="../../scripts/php/crud/persona.php">        <div class="form-space"></div>        <div class="titulo-formulario"> Persona </div>            <div class="form-row">                <div class="left-panel">                    Persona:                </div>                <div class="right-panel">                    <input type="text" class="textBox" id="Persona" name="Persona" placeholder="Nuevo" style="width: 80%;">                </div>            </div>            <div class="form-row">                <div class="left-panel">                    Identificacion:                </div>                <div class="right-panel">                    <input type="text" class="textBox" id="identificacion" name="identificacion" placeholder="Identificacion">                </div>            </div>            <div class="form-row">                <div class="left-panel">                    Nombre1:                </div>                <div class="right-panel">                    <input type="text" class="textBox" id="nombre1" name="nombre1" placeholder="Nombre1">                </div>            </div>            <div class="form-row">                <div class="left-panel">                    Nombre2:                </div>                <div class="right-panel">                    <input type="text" class="textBox" id="nombre2" name="nombre2" placeholder="Nombre2">                </div>            </div>            <div class="form-row">                <div class="left-panel">                    Apellido1:                </div>                <div class="right-panel">                    <input type="text" class="textBox" id="apellido1" name="apellido1" placeholder="Apellido1">                </div>            </div>            <div class="form-row">                <div class="left-panel">                    Apellido2:                </div>                <div class="right-panel">                    <input type="text" class="textBox" id="apellido2" name="apellido2" placeholder="Apellido2">                </div>            </div>            <div class="form-row">                <div class="left-panel">                    FechaNacimiento:                </div>                <div class="right-panel">                    <input type="text" class="textBox" id="fechaNacimiento" name="fechaNacimiento" placeholder="FechaNacimiento">                </div>            </div>            <div class="form-row">                <div class="left-panel">                    IdGenero:                </div>                <div class="right-panel">                    <input type="text" class="textBox" id="idGenero" name="idGenero" placeholder="IdGenero">                </div>            </div>            <div class="form-row">                <div class="left-panel">                    IdDomicilio:                </div>                <div class="right-panel">                    <input type="text" class="textBox" id="idDomicilio" name="idDomicilio" placeholder="IdDomicilio">                </div>            </div>            <div class="form-row">                <div class="left-panel">                    IdEstadoCivil:                </div>                <div class="right-panel">                    <input type="text" class="textBox" id="idEstadoCivil" name="idEstadoCivil" placeholder="IdEstadoCivil">                </div>            </div>            <div class="form-row">                <div class="left-panel">                    IdUbicacionNacimiento:                </div>                <div class="right-panel">                    <input type="text" class="textBox" id="idUbicacionNacimiento" name="idUbicacionNacimiento" placeholder="IdUbicacionNacimiento">                </div>            </div>            <div class="form-row">                <div class="left-panel">                    Ingresos:                </div>                <div class="right-panel">                    <input type="text" class="textBox" id="ingresos" name="ingresos" placeholder="Ingresos">                </div>            </div>            <div class="form-row">                <div class="left-panel">                    IdTipoSangre:                </div>                <div class="right-panel">                    <input type="text" class="textBox" id="idTipoSangre" name="idTipoSangre" placeholder="IdTipoSangre">                </div>            </div>            <div class="form-row">                <div class="left-panel">                    NumeroHijos:                </div>                <div class="right-panel">                    <input type="text" class="textBox" id="numeroHijos" name="numeroHijos" placeholder="NumeroHijos">                </div>            </div>            <div class="form-row">                <div class="left-panel">                    IdOcupacion:                </div>                <div class="right-panel">                    <input type="text" class="textBox" id="idOcupacion" name="idOcupacion" placeholder="IdOcupacion">                </div>            </div>            <div class="form-row">                <div class="left-panel">                    Foto:                </div>                <div class="right-panel">                    <input type="text" class="textBox" id="foto" name="foto" placeholder="Foto">                </div>            </div>            <div class="form-row">                <input type="submit" class = "botonAzul" name="submit" id="guardar" value="GUARDAR">                <input type="submit" class = "botonRojo" name="submit" id="borrar" value="BORRAR">            </div>            <div class="form-space"></div>        </form>    </div></body></html>
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Desarrollo de Software Yavirac">
+    <link rel="stylesheet" type="text/css" href="../../styles/estilo.css">
+    <link href="../../libs/kendo/style/kendo.common.min.css" rel="stylesheet">
+    <link href="../../libs/kendo/style/kendo.rtl.min.css" rel="stylesheet">
+    <link href="../../libs/kendo/style/kendo.default.min.css" rel="stylesheet">
+    <link href="../../libs/kendo/style/kendo.default.mobile.min.css" rel="stylesheet">
+    <script src="../../libs/jquery.min.js"></script>
+    <script src="../../libs/jszip.min.js"></script>
+    <script src="../../libs/kendo/kendo.all.min.js"></script>
+    <script src="persona.js"></script>
+    <meta name="author" content="Desarrollo de Software Yavirac">
+    <title>PERSONA</title>
+</head>
+<body class="BodyFondo">
+    <div class="centerDiv">
+        <form method="post" class="bigform" action="../../scripts/php/crud/persona.php">
+            <div class="form-space"></div>
+            <div class="titulo-formulario"> Persona </div>
+            <div class="form-row">
+                <div class="left-panel">
+                    Persona:
+                </div>
+                <div class="right-panel">
+                    <input type="text" class="textBox" id="Persona" name="Persona" placeholder="Nuevo" style="width: 80%;">
+                </div>
+            </div>
+            <table style="width:100%; text-align: left;">
+                <tr>
+                    <th>Primer Apellido</th>
+                    <th>Segundo Apellido</th>
+                </tr>
+                <tr>
+                    <td><input type="text" class="textBox" id="apellido1" name="apellido1" placeholder="Primer Apellido"></td>
+                    <td><input type="text" class="textBox" id="apellido2" name="apellido2" placeholder="Segundo Apellido"></td>
+                </tr>
+                <tr>
+                    <th>Primer Nombre</th>
+                    <th>Segundo Nombre</th>
+                </tr>
+                <tr>
+                    <td><input type="text" class="textBox" id="nombre1" name="nombre1" placeholder="Primer Nombre"></td>
+                    <td><input type="text" class="textBox" id="nombre2" name="nombre2" placeholder="Segundo Nombre"></td>
+                </tr>
+                <tr>
+                    <th>Identificaci&oacute;n</th>
+                    <th>Fecha de Nacimiento</th>
+                </tr>
+                <tr>
+                    <td><input type="text" class="textBox" id="identificacion" name="identificacion" placeholder="Identificacion"></td>
+                    <td><input type="text" id="fechaNacimiento" name="fechaNacimiento" placeholder="Fecha de Nacimiento" style="width: 80%;"></td>
+                </tr>
+                <tr>
+                    <th>G&eacute;nero</th>
+                    <th>Estado Civ&iacute;l</th>
+                </tr>
+                <tr>
+                    <td><input type="text" id="idGenero" name="idGenero" placeholder="IdGenero" style="width: 80%;"></td>
+                    <td><input type="text" id="idEstadoCivil" name="idEstadoCivil" placeholder="IdEstadoCivil" style="width: 80%;"></td>
+                </tr>
+                <tr>
+                    <th>Tipo de Sangre</th>
+                    <th>Ocupaci&oacute;n</th>
+                </tr>
+                <tr>
+                    <td><input type="text" id="idTipoSangre" name="idTipoSangre" placeholder="IdTipoSangre" style="width: 80%;"></td>
+                    <td><input type="text" id="idOcupacion" name="idOcupacion" placeholder="IdOcupacion" style="width: 80%;"></td>
+                </tr>
+                <tr>
+                    <th>N&uacute;mero de Hijos</th>
+                    <th>Ingresos</th>
+                </tr>
+                <tr>
+                    <td><input type="text" class="textBox" id="numeroHijos" name="numeroHijos" placeholder="NumeroHijos"></td>
+                    <td><input type="text" class="textBox" id="ingresos" name="ingresos" placeholder="Ingresos"></td>
+                </tr>
+                <tr>
+                    <th>Lugar Domicilio</th>
+                    <th>Lugar Nacimiento</th>
+                </tr>
+                <tr>
+                    <td><input type="text" id="idUbicacionNacimiento" name="idUbicacionNacimiento" placeholder="IdUbicacionNacimiento" style="width: 80%;"></td>
+                    <td><input type="text" id="idDomicilio" name="idDomicilio" placeholder="IdDomicilio" style="width: 80%;"></td>
+                </tr>
+            </table>    
+            <div class="fotoContainer">
+                Foto<br/><img class="fotoPersona" src="https://www.atomix.com.au/media/2015/06/atomix_user31.png">
+            </div>        
+            <div class="form-row">
+                <input type="submit" class = "botonAzul" name="submit" id="guardar" value="GUARDAR">
+                <input type="submit" class = "botonRojo" name="submit" id="borrar" value="BORRAR">
+            </div>
+            <div class="form-space"></div>
+        </form>
+    </div>
+</body>
+</html>
